@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a2a1a;
+    color: #c5e0c5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+nav,
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+header section img {
+    max-width: 35px;
+    border-radius: 40%;
+    border: 2px solid #4a7a4a;
+}
+
+.whiteLink {
+    color: #e8f3e8;
+}
+
+.greyLink {
+    color: #8bab8b;
+}
+
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 14px;
+}
+
+.headerText {
+    font-size: 4em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #e8f3e8;
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid #4a7a4a;
+    padding: 14px;
+    border-radius: 24px;
+    background: #2c3e2c;
+}
+
+.searchBar:hover {
+    border-color: #6b9b6b;
+    background: #344834;
+}
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.iconButton {
+    background: transparent;
+    border: none;
+    color: #c5e0c5;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: #e8f3e8;
+    flex: 1;
+}
+
+.searchButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchButtonsContainer button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #4a7a4a;
+    border: 1px solid transparent;
+    color: #e8f3e8;
+    cursor: pointer;
+}
+
+.searchButtonsContainer button:hover {
+    background: #5c8c5c;
+}
+
+.languageSelection {
+    font-size: 0.9em;
+}
+
+.languageSelection span {
+    color: #6b9b6b;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section {
+    padding: 14px;
+}
+
+footer>section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #4a7a4a;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+    cursor: pointer;
+}
+
+@media (min-width: 540px) {
+    footer>section:last-child {
+        flex-direction: row;
+    }
+}
